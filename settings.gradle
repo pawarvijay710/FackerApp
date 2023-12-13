@@ -1,0 +1,30 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+rootProject.name = "FakerApp"
+include ':app'
+include ':BaseUi'
+include ':common-data'
+include ':common-domain'
+include ':common-presentation'
+include ':common-ui'
+
+include ':login-domain'
+include ':login-ui'
+include ':login-presentation'
+include ':login-data'
+include ':home-ui'
+include ':home-presentation'
+include ':home-domain'
+include ':home-data'

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:layout_height="match_parent"
+    tools:layout_width="match_parent"
+    tools:orientation="vertical"
+    tools:parentTag="android.widget.LinearLayout">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:inputType="text"
+        android:padding="@dimen/dimen_0_dp"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextField"
+            style="@style/CustomTextView.TextAppearance"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:textCursorDrawable="@drawable/edit_text_cursor"
+            android:textEditSuggestionItemLayout="@color/FF252525"
+            tools:hint="Example" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <View
+        android:id="@+id/editTextUnderline"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_4_dp"
+        android:layout_marginTop="@dimen/dimen_4_dp"
+        android:background="@color/teal_700" />
+
+    <com.example.baseui.CustomErrorView
+        android:id="@+id/errorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_4_dp"
+        android:layout_marginBottom="@dimen/dimen_3_dp"
+        android:visibility="invisible"
+        tools:alpha="0.5"
+        tools:visibility="visible" />
+
+</merge>

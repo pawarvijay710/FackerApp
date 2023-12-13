@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FakerApp</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+    <!-- Splash welcome message -->
+    <string name="app_welcome_message">Welcome</string>
+
+    <!-- Error Message -->
+    <string name="something_went_wrong">Something went wrong!! Please try again later.</string>
+    <!-- Login Screen-->
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Sign In</string>
+    <string name="invalid_username_password">Invalid Username or Password</string>
+
+    <!-- Main Menu-->
+    <string name="main_menu_title">Hi, %1$s</string>
+    <string name="back_button">Back</string>
+
+
+</resources>

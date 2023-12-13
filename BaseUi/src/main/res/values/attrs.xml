@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text" format="string" />
+    <declare-styleable name="CustomTextView">
+        <attr name="labelType">
+            <flag name="header" value="0x00000000" />
+            <flag name="subHeader" value="0x00000001" />
+            <flag name="title" value="0x00000002" />
+            <flag name="subTitle" value="0x00000003" />
+            <flag name="description" value="0x00000004" />
+            <flag name="errorText" value="0x00000005" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="CustomErrorView" parent="CustomTextView">
+        <attr name="text" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="maxLength" format="integer" min="50" />
+        <attr name="text" />
+        <attr name="maxLines" format="integer" min="1" />
+        <attr name="hint" format="string" />
+        <attr name="error" format="string" />
+        <attr name="showError">
+            <flag name="no" value="0" />
+            <flag name="yes" value="1" />
+            <flag name="yesDefault" value="2" />
+        </attr>
+        <attr name="inputType">
+            <flag name="none" value="0x00000000" />
+            <flag name="text" value="0x00000001" />
+            <flag name="textCapCharacters" value="0x00001001" />
+            <flag name="textMultiLine" value="0x00020001" />
+            <flag name="textUri" value="0x00000011" />
+            <flag name="textEmailAddress" value="0x00000021" />
+            <flag name="textPassword" value="0x00000081" />
+            <flag name="textVisiblePassword" value="0x00000091" />
+            <flag name="number" value="0x00000002" />
+            <flag name="numberPassword" value="0x00000012" />
+            <flag name="phone" value="0x00000003" />
+            <flag name="date" value="0x000000014" />
+            <flag name="datetime" value="0x000000004" />
+        </attr>
+    </declare-styleable>
+</resources>
